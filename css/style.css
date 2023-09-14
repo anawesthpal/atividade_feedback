@@ -1,0 +1,163 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+nav {
+  height: 150px;
+  display: flex;
+  justify-content: right;
+  /* background-color: #6644b7; */
+}
+
+main {
+    margin-bottom: 50px;
+    padding: 100px;
+    height: calc(100vh - 150px - 75px);
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+h1 {
+    font-weight: 900 !important;
+    font-size: 10rem !important;
+    gap: 1rem !important;
+}
+
+#h4-color {
+    color: rgb(96, 96, 96) !important;
+}
+
+strong {
+    color: #FA5E95;
+}
+
+button {
+    height: 50px;
+    width: 240px;
+    display: flex;
+    border: none;
+    font-size: 1.2rem !important;
+    border-radius: 10px !important;
+    align-items: center;
+    justify-content: right;
+    background-color: #6644b7;
+    color: white;
+}
+ 
+
+button:hover {
+    font-weight: 600;
+    width: 260px;
+    background-color:#FA5E95;
+    color: white;
+    border: none;
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+#btn {
+    margin-top: 50px;
+}
+
+#seta {
+    height: 50px !important;
+}
+
+#seta:hover {
+    height: 70px !important;
+    transition: 0.3s;
+}
+
+#div-footer-index {
+  height: 50px;
+  background-color: #6644b7;
+  color: #ffff;
+  display: flex;
+  align-items: center;
+  width: 100vw;
+  justify-content: space-around;
+  position: absolute;
+  bottom: 0;
+}
+
+.p-footer {
+  padding-top: 15px;
+}
+
+#vermelho {
+  color: red;
+}
+
+#laranja {
+  color: orange;
+}
+
+#amarelo {
+  color: rgb(218, 218, 19);
+}
+
+#verde-f {
+  color: rgb(138, 233, 114);
+}
+
+#verde-forte {
+  color: rgb(44, 190, 8);
+}
+
+#semi-aqua {
+  color: rgb(140, 253, 215);
+}
+
+#aqua {
+  color: cyan;
+}
+
+#azul-claro {
+  color: rgb(75, 154, 245);
+}
+
+#azul-escuro {
+  color: rgb(0, 81, 255);
+}
+
+#azul-m-escuro {
+  color: darkblue;
+}
+
+#roxo {
+  color: rgb(41, 3, 41);
+}
+
+#rosa {
+  color: #a81549;
+}
+
+#quase-vermelho {
+  color: brown;
+}
+
+
+/* Defina a classe para os elementos que deseja animar */
+.animated {
+  opacity: 0; /* Comece com a opacidade definida para 0 para esconder os elementos */
+  transform: translateY(20px); /* Mova os elementos para baixo 20 pixels */
+  transition: opacity 0.5s ease, transform 0.5s ease; /* Adicione transições suaves */
+}
+
+/* Quando o elemento entra na viewport (tela visível), faça com que ele apareça */
+.animated.in-view {
+  opacity: 1; /* Torna o elemento visível */
+  transform: translateY(0); /* Volte à posição original */
+}
+
